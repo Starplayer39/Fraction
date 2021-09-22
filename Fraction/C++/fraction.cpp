@@ -110,6 +110,16 @@ void Fraction::Simplify()
 	m_denominator = newDenominator;
 }
 
+Fraction Fraction::operator + () const
+{
+	return Fraction(m_numerator, m_denominator);
+}
+
+Fraction Fraction::operator - () const
+{
+	return Fraction(m_numerator * -1, m_denominator);
+}
+
 Fraction Fraction::operator + (Fraction& fraction)
 {
 	this->Common(fraction);
