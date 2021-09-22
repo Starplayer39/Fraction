@@ -35,6 +35,9 @@ public:
 	/// </summary>
 	static void Common(Fraction& fraction0, Fraction& fraction1);
 
+	Fraction operator + () const;
+	Fraction operator - () const;
+
 	Fraction operator + (Fraction& fraction);
 	Fraction operator - (Fraction& fraction);
 	Fraction operator * (Fraction& fraction);
