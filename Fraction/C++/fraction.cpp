@@ -36,7 +36,10 @@ Fraction::Fraction(int numerator, int denominator, bool doSimplify)
 	m_numerator = numerator;
 	m_denominator = denominator;
 
-	if (doSimplify) Simplify();
+	if (doSimplify)
+	{
+		Simplify();
+	}
 }
 
 Fraction::Fraction(float value, bool doSimplify)
@@ -54,16 +57,30 @@ Fraction::Fraction(float value, bool doSimplify)
 
 	assert(m_denominator != 0);
 
-	if (doSimplify) Simplify();
+	if (doSimplify)
+	{
+		Simplify();
+	}
 }
 
-int Fraction::GetNumerator() { return m_numerator; }
-int Fraction::GetDenominator() { return m_denominator; }
+int Fraction::GetNumerator()
+{
+	return m_numerator;
+}
 
-void Fraction::SetNumerator(int numerator) { m_numerator = numerator; }
+int Fraction::GetDenominator()
+{
+	return m_denominator;
+}
+
+void Fraction::SetNumerator(int numerator)
+{
+	m_numerator = numerator;
+}
 void Fraction::SetDenominator(int denominator)
 {
 	assert(denominator != 0);
+
 	m_denominator = denominator;
 }
 
