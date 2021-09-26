@@ -110,7 +110,7 @@ class Fraction:
         return Fraction(new_numerator, self.__m_denominator)
 
     def __pos__(self):
-        return Fraction(self.numerator * -1, self.denominator)
+        return Fraction(self.numerator, self.denominator)
 
     def __sub__(self, fraction):
         self.common(fraction)
