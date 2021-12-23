@@ -2,7 +2,7 @@ namespace Starplayer39.FractionFS
 
 open System
 
-module Fraction =
+module FractionUtility =
 
     let rec Gcd x y  =
         let x' = max x y
